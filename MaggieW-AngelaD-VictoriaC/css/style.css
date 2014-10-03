@@ -1,0 +1,31 @@
+/* Put your CSS here */
+.ember-application {
+  margin: 0 auto;
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 2rem;
+  display: block;
+  width: 40%;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 2rem;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.Produce, .Produce > a {
+  color: #30AB3A; /*green*/
+}
+
+.Dairy, .Dairy > a {
+  color: #307AAB; /*blue*/
+}
+
+.Packaged, .Packaged a {
+  color: #BA8900; /*tan*/
+}

@@ -28,3 +28,14 @@ a {
 .Ruby, .Ruby a {
   color:    #B00000 ; /*rubyred*/
 }
+
+.submitbtn {
+  width: 200px;
+  height: 50px;
+  border: 2px solid #1ECD97;
+  border-radius: 40px;
+  background: yellow;
+  color: blue;
+  letter-spacing: 1px;
+  font-size: 1.25em;
+}

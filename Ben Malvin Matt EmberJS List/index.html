@@ -12,21 +12,19 @@
 
   <body>
     <section class="container">
-      <h1>
-        Developer Resume Skills
-      </h1>
-
       <script type="text/x-handlebars">
+      <h1>{{#link-to 'index'}}
+        Developer Resume Skills
+        {{/link-to}}
+      </h1>
         <ul>
           {{#each model}}
           <li {{bindAttr class="type"}}>
             {{#linkTo "item" this}}{{name}}{{/linkTo}}
           </li>
           {{/each}}
-          <li>
-            <a href="#" {{action createItem}}>Add Item</a>
-          </li>
         </ul>
+        <input type="submit" class="submitbtn" {{action createItem}} value="Add Item" />
         <div>
           {{outlet}}
         </div>
@@ -56,7 +54,6 @@
               Type of Skill:
               {{input type="text" value=type placeholder="(Front-End, JavaScript, MobileDev, Python, Ruby )"}}
             </label>
-            <button type="submit">Done</button>
           </form>
       </script>
     </section>
@@ -65,6 +62,6 @@
     <script src="js/app.js"></script>
     <!-- to activate the test runner, add the "?test" query string parameter -->
     <script src="tests/runner.js"></script>
-    
+
   </body>
 </html>
